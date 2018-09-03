@@ -1,0 +1,11 @@
+<templateSet group="AndyZDL">
+  <template name="cmt" value="/**&#10; *  @author $user$&#10; *  @time $date$  $time$&#10; *  @describe $param$&#10; */" description="方法注释模板" toReformat="false" toShortenFQNames="true">
+    <variable name="user" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
