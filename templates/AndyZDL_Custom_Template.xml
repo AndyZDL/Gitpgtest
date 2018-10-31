@@ -1,0 +1,21 @@
+<templateSet group="AndyZDL_Custom_Template">
+  <template name="cmt_method" value="/**&#10; *  @author $user$&#10; *  @time $date$  $time$&#10; *  @describe &#10; *  @param $param$&#10; */&#10;" description="方法注释模板" toReformat="false" toShortenFQNames="true">
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="cmt_head" value="/**&#10;*@Description: $desc$&#10;*@File: $name$.java&#10;*@Author: $user$&#10;*@Time: $date$ $time$&#10;*&#10;*/" description="类名注释模板" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
